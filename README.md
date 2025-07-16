@@ -1,88 +1,116 @@
-```
-# Crypto Dash
-🌐 **Live Demo:** [https://crypto-dashbo.netlify.app/](https://crypto-dashbo.netlify.app/)
+## Live Site
 
-Crypto Dash is a professional, responsive cryptocurrency tracking application built with React.
-It allows users to search, sort, and explore real-time data of coins, with detailed information and interactive charts.
+## https://crypto-dashbo.netlify.app/
+
+---
+
+````markdown
+# Crypto Dash – React Cryptocurrency Tracker
+
+Crypto Dash is a professional, fully responsive cryptocurrency tracking app built with **React.js** and powered by the **CoinGecko API**.  
+It offers live market data, advanced search, sorting, pagination, and detailed insights for every coin — wrapped in a sleek, modern UI.
+
+---
 
 ## Features
 
-- Real-time cryptocurrency data from CoinGecko API
-- Search by name or symbol
-- Pagination: view 5, 10, 20, or more coins
+- Live data from CoinGecko (no API key needed)
+- Search coins by name or symbol
+- Adjustable pagination (5, 10, 20, or more)
 - Sort by:
   - Market Cap (ascending / descending)
   - Current Price (ascending / descending)
   - 24h Change (ascending / descending)
-- Detailed coin page with:
-  - Image, name, symbol, and description
+- Detailed coin view:
+  - Name, symbol, logo
   - Rank, current price, market cap
-  - 24h high/low, all-time high/low (with dates)
-  - Circulating and total supply
-  - Last updated timestamp
-  - Homepage and explorer links
-  - Interactive chart (powered by Chart.js)
-- Fully responsive design for mobile and desktop
-- Clean, dark-themed UI for modern look
+  - 24h high/low, all-time high/low
+  - Supply data and update timestamps
+  - External links (homepage, explorer)
+  - Interactive price chart (Chart.js)
+- 100% responsive – desktop, tablet, and mobile
+- Smooth and clean dark UI
+
+---
 
 ## Tech Stack
 
-- React.js
-- React Router DOM
-- Axios
-- Chart.js (via react-chartjs-2)
-- SCSS Modules
-- CoinGecko REST API
-- Vite
+- **Frontend**: React.js, Vite, React Router, SCSS
+- **HTTP**: Axios
+- **Charts**: Chart.js (via react-chartjs-2)
+- **Data Source**: CoinGecko REST API
+
+---
 
 ## Getting Started
 
-1. Clone the repository:
+### 1. Clone the repository
 
-   git clone https://github.com/YOUR_USERNAME/crypto-dash.git
+```bash
+git clone https://github.com/YOUR_USERNAME/crypto-dash.git
+cd crypto-dash
+```
+````
 
-2. Navigate to the project folder:
+### 2. Install dependencies
 
-   cd crypto-dash
+```bash
+npm install
+```
 
-3. Install dependencies:
+### 3. Add environment variable
 
-   npm install
+Create a `.env` file in the root directory with:
 
-4. Create a `.env` file in the root directory and add the following line:
+```env
+VITE_COIN_API=https://api.coingecko.com/api/v3/coins
+```
 
-   VITE_COIN_API=https://api.coingecko.com/api/v3/coins
+### 4. Start the development server
 
-5. Run the development server:
+```bash
+npm run dev
+```
 
-   npm run dev
+---
 
-## File Structure
+## Folder Structure
 
+```plaintext
 crypto-dash/
 ├── public/
 ├── src/
-│   ├── components/
-│   ├── pages/
-│   ├── styles/
-│   ├── data/
+│   ├── components/      # Reusable UI components
+│   ├── pages/           # Home & CoinDetails
+│   ├── styles/          # SCSS Modules
+│   ├── data/            # Static / dummy data
 │   ├── App.jsx
 │   └── main.jsx
 ├── .env
 ├── package.json
 └── README.md
+```
+
+---
 
 ## Deployment
 
-You can deploy the app using:
+Can be deployed easily using:
+
 - Netlify
 - Vercel
 - Render
-Just make sure to configure the environment variable (API URL) on the hosting platform.
+
+Just make sure to set the environment variable (`VITE_COIN_API`) on the platform.
+
+---
 
 ## Author
 
-Developed by: Shmuel Yitzhak
-Email: shmoelyitzhak@gmail.com
+**Developed by:** Shmuel Yitzhak  
+**Email:** shmoelyitzhak@gmail.com  
 All rights reserved.
+
+```
+
 ```

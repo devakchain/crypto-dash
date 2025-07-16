@@ -1,5 +1,6 @@
 ```
 # Crypto Dash
+🌐 **Live Demo:** [https://crypto-dashbo.netlify.app/](https://crypto-dashbo.netlify.app/)
 
 Crypto Dash is a professional, responsive cryptocurrency tracking application built with React.
 It allows users to search, sort, and explore real-time data of coins, with detailed information and interactive charts.
